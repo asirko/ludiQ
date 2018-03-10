@@ -1,0 +1,30 @@
+[
+  {
+    "label": "Question Bidon",
+    "question": "Quel est la couleur du cheval noir d'Henry IV&nbsp;?",
+    "possibilities": [
+      { "value": "Blanc" },
+      { "value": "Brun" },
+      { "value": "Vert" },
+      { "value": "Noir", "isTruth": true }
+    ]
+  }, {
+    "label": "Question EMAC",
+    "question": "Le vendredi soir, les EMACiens sont&nbsp;:",
+    "possibilities": [
+      { "value": "Au lit" },
+      { "value": "Arraché", "isTruth": true },
+      { "value": "A la gainguette" },
+      { "value": "Sous le fut", "isTruth": true }
+    ]
+  }, {
+    "label": "Question Vipérine",
+    "question": "La famille vipérine est composée de&nbsp;:",
+    "possibilities": [
+      { "value": "Bûcheurs" },
+      { "value": "Chastes sans inceste" },
+      { "value": "Nerds" },
+      { "value": "Foies fragils" }
+    ]
+  }
+]
