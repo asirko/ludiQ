@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
 
-app.get('/', function (req, res) {
-  res.send({
-    hello: 'world!'
-  });
+const questions = require('./data/questionnaire');
+
+app.get('/questions', function (req, res) {
+  res.send(questions);
 });
 
 app.listen(3000, function () {
