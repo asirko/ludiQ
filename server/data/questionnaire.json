@@ -13,7 +13,7 @@
     "question": "Le vendredi soir, les EMACiens sont&nbsp;:",
     "possibilities": [
       { "value": "Au lit" },
-      { "value": "Arraché", "isTruth": true },
+      { "value": "Arrachés", "isTruth": true },
       { "value": "A la gainguette" },
       { "value": "Sous le fut", "isTruth": true }
     ]
