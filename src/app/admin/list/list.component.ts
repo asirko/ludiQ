@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {QuestionsService} from '../../questions.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-list',
@@ -8,14 +9,20 @@ import {QuestionsService} from '../../questions.service';
 })
 export class ListComponent implements OnInit {
 
-  questions: any;
+  questionList: any;
 
-  constructor(private toto: QuestionsService) { }
+  constructor(private questionsService: QuestionsService,
+              private router: Router) { }
 
   ngOnInit() {
-    this.toto.getQuestions().subscribe(questions => {
-      this.questions = questions;
+    this.questionsService.getQuestions().subscribe(questions => {
+      this.questionList = questions;
     });
+  }
+
+  navigate(question: any): void {
+    this.questionsService.storeQuestion(question);
+    this.router.navigate(['/admin/question']);
   }
 
 }

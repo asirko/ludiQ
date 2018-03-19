@@ -3,7 +3,7 @@ const app = express();
 
 const questions = require('./data/questionnaire');
 
-app.get('/questions', function (req, res) {
+app.get('/questionList', function (req, res) {
   res.send(questions);
 });
 

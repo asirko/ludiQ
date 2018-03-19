@@ -1,3 +1,6 @@
-<p>
-  {{ questions | json }}
-</p>
+<ul>
+  <li *ngFor="let question of questionList" (click)="navigate(question)">
+    <div>{{ question.label }}</div>
+    <div [innerHTML]="question.question"></div>
+  </li>
+</ul>
